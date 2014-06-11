@@ -18,9 +18,6 @@ public class LinkData {
 	    private String url;
 	     
 	    @Persistent
-	    private String pass;
-	     
-	    @Persistent
 	    private String count1;
 	     
 	    @Persistent
@@ -36,11 +33,10 @@ public class LinkData {
 	    private String total;
 	    
 	 
-	    public LinkData(String title, String url, String comment,String count1, String count2, String count3, String count4, String count5) {
+	    public LinkData(String title, String url,String count1, String count2, String count3, String count4, String count5) {
 	        super();
 	        this.name = title;
 	        this.url = url;
-	        this.pass = comment;
 	        this.count1 = count1;
 	        this.count2 = count2;
 	        this.count3 = count3;
@@ -72,14 +68,6 @@ public class LinkData {
 	        this.url = url;
 	    }
 	 
-	    public String getComment() {
-	        return pass;
-	    }
-	 
-	    public void setComment(String comment) {
-	        this.pass = comment;
-	    }
-	
 	    public String getCount1() {
 	        return count1;
 	    }

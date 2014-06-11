@@ -38,8 +38,7 @@ public class TestgaeServlet extends HttpServlet {
         if (list != null){
             for(LinkData data:list){
                 res += "{id:" + data.getId() + ",url:'" + data.getUrl() + "',title:'" +
-                    data.getTitle()  +
-                    "',comment:'" + data.getComment() + "'},";
+                    data.getTitle() +"'},";
             }
         }
         res += "]";

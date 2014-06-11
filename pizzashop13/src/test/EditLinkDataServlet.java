@@ -32,7 +32,6 @@ public class EditLinkDataServlet extends HttpServlet{
         LinkData data = (LinkData)manager.getObjectById(LinkData.class,id);
         data.setTitle(title);
         data.setUrl(url);
-        data.setComment(comment);
         manager.close();
         resp.sendRedirect("/index.html");
     }
